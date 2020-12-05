@@ -1,0 +1,29 @@
+.pres-links {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: solid 1px $brand-blue;
+  .pres-link {
+    width: 30%;
+    a {
+      font-size: 22px;
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+      height: 68px;
+      width: 30%;
+      color: $brand-blue;
+      &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+        border-bottom: solid 3px $brand-blue;
+      }
+    }
+  }
+}
+
+#logo-boulogne {
+  margin-left: 30px;
+}
+#logo-c2b {
+  margin-left: 88px;
+}

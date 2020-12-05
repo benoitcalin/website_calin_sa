@@ -3,9 +3,23 @@ $brand-blue: #0015CD;
 
 // For example:
 $red: #FD1015;
-$blue: #167FFB;
+$blue: #0015CD;
 $yellow: #FFC65A;
 $orange: #E67E22;
 $green: #1EDD88;
 $gray: #0E0000;
 $light-gray: #F4F4F4;
+
+$theme-colors: (
+  "red": #EB5757,
+  "blue": #0015CD,
+  "yellow": #F2C94C,
+  "orange": #E67E22,
+  "green": #27AE60,
+  "gray": #333333,
+  "light-gray": #6c757d,
+  "light-grey": #6c757db4,
+  "white": #FFFF,
+  "black": #4F4F4F,
+  "purple": #BB6BD9
+);

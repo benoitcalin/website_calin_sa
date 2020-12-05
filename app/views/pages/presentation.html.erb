@@ -1,1 +1,39 @@
-<h1>Présentation</h1>
+<div class="banner-title-toupie">
+  <h1>Présentation du groupe</h1>
+</div>
+
+<div class="calin-container">
+  <div class="pres-links my-3">
+    <div class="pres-link">
+      <%= link_to 'Organisation', organisation_path %>
+    </div>
+    <div class="pres-link">
+      <%= link_to 'Moyens et Chiffres', figures_path %>
+    </div>
+    <div class="pres-link">
+      <%= link_to 'Historique', history_path %>
+    </div>
+  </div>
+
+  <p>Groupe familial indépendant, l'<span class="text-blue bold">Entreprise Paul CALIN</span> est présente depuis plus de 70 ans en Lorraine et Champagne.</p>
+  <p class="">Elle exerce ses <span class="bold">trois métiers</span> :</p>
+  <ul>
+    <li>Bêton Prêt-à-l’emploi,</li>
+    <li>Carrières et Sablières,</li>
+    <li>Travaux Publics.</li>
+  </ul>
+
+  <p class="">Sur <span class="bold">deux sites</span> géographiques :</p>
+  <ul>
+    <li>à BARVILLE (88300, proche de NEUFCHATEAU, dans l'Ouest des Vosges),</li>
+    <li>à SAINT-DIZIER (52100, Nord de la Haute-Marne).</li>
+  </ul>
+
+  <p class="">Elle possède <span class="bold">deux filiales</span> :</p>
+  <ul>
+    <li class="mb-2">l'entreprise BOULOGNE exploite des Carrières et Sablières autour de SAINT-DIZIER (52), <%= image_tag 'logos/logo-boulogne', height: '70px', id: 'logo-boulogne' %></li>
+    <li>la Sas C2B (CALIN-BAR Béton) produit du Béton Prêt à l'Emploi à BAR-LE-DUC (55).<%= image_tag 'logos/logo-c2b', height: '70px', id: 'logo-c2b' %></li>
+  </ul>
+
+  <p class="">Plus d’informations sur l’organisation de la société, les moyens et chiffres récents ainsi que l’historique dans les onglets ci-dessus.</p>
+</div>
