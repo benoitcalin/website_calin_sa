@@ -1,0 +1,73 @@
+.sidebar-calin {
+  width: 250px;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: $brand-blue;
+  color: white;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  h3 {
+    height: 65px;
+    text-align: center;
+    font-weight: 400;
+  }
+  img {
+    width: 200px;
+    margin-left: 5px;
+  }
+  a {
+    display:inline-block;
+    color: white;
+  }
+}
+
+.sidebar-container {
+  margin-left: 250px;
+}
+
+.sidebar-item {
+  border-bottom: solid 1px white;
+  a {
+    font-size: 22px;
+    vertical-align: middle;
+    display: table-cell;
+    height: 55px;
+    width: 210px;
+    text-align: center;
+    color: white;
+    &:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+  }
+}
+
+.sidebar-sub-items {
+  border-bottom: solid 1px white;
+  .sidebar-sub-item {
+    a {
+      font-size: 18px;
+      vertical-align: middle;
+      display: table-cell;
+      height: 30px;
+      width: 210px;
+      color: white;
+      &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.sidebar-bottom {
+  p {
+    margin: 0;
+    font-weight: 400;
+  }
+}

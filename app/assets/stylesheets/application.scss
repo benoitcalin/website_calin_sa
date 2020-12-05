@@ -11,3 +11,9 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Define text sizes
+h1 { font-size: 38px; font-weight: 700; }
+h2 { font-size: 34px; font-weight: 600; }
+h3 { font-size: 22px; }
+p { font-size: 18px; }
