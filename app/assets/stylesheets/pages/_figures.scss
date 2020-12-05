@@ -1,0 +1,23 @@
+.figures-row {
+  max-width: 1000px;
+  margin: 20px 0;
+  height: 220px;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.ul-no-style {
+  padding-left: 0;
+  li {
+    font-size: 16px;
+    list-style: none;
+    margin-bottom: 0;
+  }
+  li::before {
+    content: none;
+    width: 0;
+    margin-left: 0;
+  }
+}

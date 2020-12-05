@@ -1,1 +1,49 @@
-<h1>Organisation</h1>
+<div class="banner-title-toupie">
+  <h1>Présentation du groupe - Organisation</h1>
+</div>
+
+<div class="calin-container">
+  <div class="pres-links my-3">
+    <div class="pres-link">
+      <%= link_to 'Organisation', organisation_path, class: 'active-tab' %>
+    </div>
+    <div class="pres-link">
+      <%= link_to 'Moyens et Chiffres', figures_path %>
+    </div>
+    <div class="pres-link">
+      <%= link_to 'Historique', history_path %>
+    </div>
+  </div>
+
+  <p class="">L'Entreprise Paul CALIN exerce ses <span class="bold">3 activités</span> (Béton , Carrières et Travaux Publics) sur <span class="bold">2 sites géographiques</span> :</p>
+  <ul>
+    <li>à <span class="bold">BARVILLE</span> (88300), 3 rue de la scierie - RD3e, où se trouve le siège social,</li>
+    <li>à <span class="bold">SAINT-DIZIER</span> (52100), route de Villiers-en-Lieu - RD221.</li>
+  </ul>
+
+  <h3 class="text-blue bold mt-5 mb-4">L'équipe de management</h3>
+
+  <div class="row">
+    <div class="col-lg-8 col-12">
+      <p class="">La <span class="bold">Direction Générale</span> de l'Entreprise CALIN est exercée depuis 2003 par :</p>
+      <ul>
+        <li>Guy CALIN, Président Directeur Général, <small>(basé à Barville)</small></li>
+        <li>Jean-François CALIN, Directeur Général Délégué, <small>(basé à Saint-Dizier)</small></li>
+        <li>Yves CALIN, Directeur Général Délégué. <small>(basé à Saint-Dizier)</small></li>
+      </ul>
+    </div>
+    <div class="col-lg-4 col-12">
+      <%= image_tag 'organigramme.png', width: '100%', style: 'max-width: 300px;' %>
+    </div>
+  </div>
+
+
+  <p class="mb-3">Thierry CALIN est <span class="bold">Directeur Administratif et Financier</span>.</p>
+
+  <p class="mb-1">Damien DUMONT est le <span class="bold">responsable de l'activité Béton</span> CALIN et C2B.</p>
+  <p class="mb-1">David CABLEY, Guillaume ARNOULD (à Barville), et Arnaud VALTON (à St-Dizier) sont <span class="bold">conducteurs de travaux TP</span>.</p>
+  <p class="mb-3">Ludovic MOUROT (à Barville) et Thierry DEMOUGIN (à St-Dizier) sont les <span class="bold">responsables du matériel</span>.</p>
+
+  <p class="mb-1">Guy CALIN dirige la filiale <span class="bold">C2B</span>.</p>
+  <p class="mb-3">Yves CALIN dirige la filiale <span class="bold">BOULOGNE</span>.</p>
+</div>

@@ -1,1 +1,79 @@
-<h1>Moyens et Chiffres</h1>
+<div class="banner-title-toupie">
+  <h1>Présentation du groupe - Moyens et Chiffres</h1>
+</div>
+
+<div class="calin-container">
+  <div class="pres-links my-3">
+    <div class="pres-link">
+      <%= link_to 'Organisation', organisation_path %>
+    </div>
+    <div class="pres-link">
+      <%= link_to 'Moyens et Chiffres', figures_path, class: 'active-tab' %>
+    </div>
+    <div class="pres-link">
+      <%= link_to 'Historique', history_path %>
+    </div>
+  </div>
+
+  <p class="">
+    En 2019, l'Entreprise CALIN a réalisé un Chiffre d'Affaires de <span class="bold">19,5 Millions d'€uros</span>,
+    <br>
+    avec un effectif d'environ <span class="bold">100 personnes</span>.
+  </p>
+  <ul>
+    <li>à <span class="bold">BARVILLE</span> (88300), 3 rue de la scierie - RD3e, où se trouve le siège social,</li>
+    <li>à <span class="bold">SAINT-DIZIER</span> (52100), route de Villiers-en-Lieu - RD221.</li>
+  </ul>
+
+  <p class="bold mt-5 mb-4">Moyens matériels du groupe CALIN (entreprises CALIN, BOULOGNE, et C2B) :</p>
+
+  <div class="row figures-row">
+    <div class="col-lg-3 col-12">
+      <%= image_tag 'beton.jpg', width: '100%', style: 'max-width: 300px;' %>
+    </div>
+    <div class="col-lg-9 col-12">
+      <p class="bold text-blue mb-3">Béton prêt à l'emploi</p>
+      <ul class="ul-no-style">
+        <li>4 centrales à béton,</li>
+        <li>environ 20 camions malaxeurs (semis, 8x4, 6x4) pour les livraisons de béton,</li>
+        <li>1 camion 8x4 malaxeur / pompe PUMI.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row figures-row">
+    <div class="col-lg-9 col-12">
+      <p class="bold text-blue mb-3">Carrières et Sablières</p>
+      <ul class="ul-no-style">
+        <li>4 installations fixes ou semi-mobiles de concassage et criblage,</li>
+        <li>3 installations fixes de lavage, criblage, et broyage de sables et graviers,</li>
+        <li>2 concasseurs mobiles sur chenilles,</li>
+        <li>2 scalpeurs mobiles sur chenilles,</li>
+        <li>environ 20 engins de carrières (bull, pelleteuses 30 à 60 t, chargeuses, tombereaux).</li>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-12">
+      <%= image_tag 'carriere.jpg', width: '100%', style: 'max-width: 300px;' %>
+    </div>
+  </div>
+
+  <div class="row figures-row">
+    <div class="col-lg-3 col-12">
+      <%= image_tag 'chantier.jpg', width: '100%', style: 'max-width: 300px;' %>
+    </div>
+    <div class="col-lg-9 col-12">
+      <p class="bold text-blue mb-3">Travaux Publics</p>
+      <ul class="ul-no-style">
+        <li>environ 40 engins de chantiers TP (pelleteuses 5 à 30 t, 3 bull, 1 trax, 2 niveleuses, compacteurs VM2 à VM5, chargeuses ..),</li>
+        <li>environ 40 camions bennes (semis, 8x4, 6x4) pour les terrassements et les tranports de granulats,</li>
+        <li>3 porte-engins, 2 citernes à eau,</li>
+        <li>1 camion 4x2 goudronneuse</li>
+        <li>petit matériel de chantiers (pilonneuses, plaques vibrantes, scies, tronçonneuses ..),</li>
+        <li>matériel de topo, GPS, et guidage laser.</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <p class="mb-3">L'entretien du matériel est réalisé dans nos ateliers à Barville et Saint-Dizier.</p>
+</div>
