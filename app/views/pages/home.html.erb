@@ -1,2 +1,40 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="calin-container">
+  <h1 class="text-center py-4 bold">Bienvenue sur le site de l'entreprise <span class="text-blue">Paul Calin</span></h1>
+
+
+  <div class="d-flex justify-content-center align-items-center my-3">
+    <%= image_tag 'prez-map.jpg', style: 'max-width: 75%' %>
+  </div>
+
+  <div class="row my-3">
+    <div class="col-lg-3 col-6 cards">
+      <%= link_to presentation_path, class: 'link-cards', id: "prez-card" do %>
+        <div class="card-category">
+          Présentation
+        </div>
+      <% end %>
+    </div>
+    <div class="col-lg-3 col-6 cards">
+      <%= link_to concrete_path, class: 'link-cards', id: "concrete-card" do %>
+        <div class="card-category">
+          Béton Prêt-à-l'emploi
+        </div>
+      <% end %>
+    </div>
+    <div class="col-lg-3 col-6 cards">
+      <%= link_to quarries_path, class: 'link-cards', id: "quarries-card" do %>
+        <div class="card-category">
+          Carrières
+        </div>
+      <% end %>
+    </div>
+    <div class="col-lg-3 col-6 cards">
+      <%= link_to publics_path, class: 'link-cards', id: "publics-card" do %>
+        <div class="card-category">
+          Travaux Publics
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+

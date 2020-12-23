@@ -1,1 +1,28 @@
-// Specific CSS for your home-page
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+}
+
+#prez-card .card-category {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), asset-url('flotte.jpg');
+}
+#concrete-card .card-category {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), asset-url('beton.jpg');
+}
+#quarries-card .card-category {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), asset-url('carriere.jpg');
+}
+#publics-card .card-category {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), asset-url('chantier.jpg');
+}
