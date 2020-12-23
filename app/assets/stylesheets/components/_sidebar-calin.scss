@@ -18,7 +18,7 @@
     font-weight: 400;
   }
   img {
-    width: 200px;
+    width: 180px;
     margin-left: 5px;
   }
   a {
@@ -34,10 +34,10 @@
 .sidebar-item {
   border-bottom: solid 1px white;
   a {
-    font-size: 22px;
+    font-size: 19px;
     vertical-align: middle;
     display: table-cell;
-    height: 55px;
+    height: 45px;
     width: 210px;
     text-align: center;
     color: white;
@@ -46,6 +46,12 @@
       opacity: 0.8;
     }
   }
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sidebar-sub-items {
