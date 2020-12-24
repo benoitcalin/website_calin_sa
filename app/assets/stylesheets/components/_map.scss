@@ -1,0 +1,24 @@
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.filter-button {
+  height: 50px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  color: black;
+  &:hover {
+    opacity: 0.7;
+  }
+}
