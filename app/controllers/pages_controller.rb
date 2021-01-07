@@ -29,11 +29,21 @@ class PagesController < ApplicationController
 
   def subsidiaries; end
 
-  def concrete; end
+  def concrete
+    @carousel1 = Dir.glob("app/assets/images/concrete/carousel1/*")
+    @carousel2 = Dir.glob("app/assets/images/concrete/carousel2/*")
+    @carousel3 = Dir.glob("app/assets/images/concrete/carousel3/*")
+  end
 
-  def quarries; end
+  def quarries
+    @carousel1 = Dir.glob("app/assets/images/quarries/carousel1/*")
+    @carousel2 = Dir.glob("app/assets/images/quarries/carousel2/*")
+  end
 
-  def publics; end
+  def publics
+    @carousel1 = Dir.glob("app/assets/images/publics/carousel1/*")
+    @carousel2 = Dir.glob("app/assets/images/publics/carousel2/*")
+  end
 
   def mentions; end
 end

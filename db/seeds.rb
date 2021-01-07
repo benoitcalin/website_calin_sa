@@ -21,9 +21,9 @@ hash = {
     { name: "Tramont-Lassus (54)", latitude: 48.40788981601554, longitude: 5.976054762851975, color: 'green' },
   ],
   "sablieres" => [
-    { name: "Coussey / Sionne (88)", latitude: 48.40163873300476, longitude: 5.668304771089603, color: 'green' },
-    { name: "Perthois (52)", latitude: 48.66633126264354, longitude: 4.7856462665331465, color: 'green' },
-    { name: "Moeslains (52)", latitude: 48.622392401697844, longitude: 4.902547356435005, color: 'green' },
+    { name: "Coussey / Sionne (88)", latitude: 48.40163873300476, longitude: 5.668304771089603, color: 'yellow' },
+    { name: "Perthois (52)", latitude: 48.66633126264354, longitude: 4.7856462665331465, color: 'yellow' },
+    { name: "Moeslains (52)", latitude: 48.622392401697844, longitude: 4.902547356435005, color: 'yellow' },
   ]
 }
 

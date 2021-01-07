@@ -32,17 +32,17 @@
       </ul>
     </div>
     <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center">
-      <%= image_tag 'beton.jpg', style: 'max-width: 100%;' %>
+      <%= render 'carousel', images: @carousel1, path: "publics/carousel1", number: 1, mid_width: false %>
     </div>
   </div>
 
   <p class="my-3">
-    De 2005 à fin 2019, l'entreprise CALIN a réalisé les pistes d'accès, les plateformes de grutage, et les terrassements des massifs pour la construction de plus de 300 éoliennes en Lorraine et Champagne-Ardenne.
+    De 2005 à fin 2019, l'entreprise CALIN a réalisé les <span class="bold">pistes d'accès</span>, les <span class="bold">plateformes de grutage</span>, et les <span class="bold">terrassements</span> des massifs <span class="bold">pour la construction de plus de 300 éoliennes</span> en Lorraine et Champagne-Ardenne.
   </p>
 
   <div class="row">
     <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center">
-      <%= image_tag 'beton.jpg', style: 'max-width: 100%;' %>
+      <%= render 'carousel', images: @carousel2, path: "publics/carousel2", number: 2, mid_width: false %>
     </div>
     <div class="col-lg-8 col-12">
       <p class="my-3">

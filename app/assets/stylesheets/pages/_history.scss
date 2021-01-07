@@ -1,15 +1,16 @@
 .absolute-image {
-  opacity: 0.2;
+  opacity: 0.25;
   position: absolute;
   object-fit: cover;
 }
 
-#compacteur {
+#photo1 {
   right: 0;
   top: 50px;
 }
 
-#flotte {
+#photo2 {
   right: 0;
   bottom: 10px;
+  max-height: 400px;
 }
