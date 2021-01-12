@@ -3,28 +3,32 @@
 </div>
 
 <div class="calin-container my-3 d-flex flex-column align-items-center justify-content-center">
-  <h4>Filtrer par :</h4>
   <div class="d-flex my-3">
-    <%= link_to sites_path(query: "entites") do %>
+    <%= link_to sites_path do %>
       <div class="d-flex filter-button">
+        <p class='pl-2' style='margin: 0'>Tout</p>
+      </div>
+    <% end %>
+    <%= link_to sites_path(query: "entites") do %>
+      <div class="d-flex filter-button" data-filter="?query=entites">
         <%= image_tag 'marker-blue.png', width: '20px', height: '30px' %>
         <p class='pl-2' style='margin: 0'>Siège, succursale et filiales</p>
       </div>
     <% end %>
     <%= link_to sites_path(query: "beton") do %>
-      <div class="d-flex filter-button">
+      <div class="d-flex filter-button" data-filter="?query=beton">
         <%= image_tag 'marker-red.png', width: '20px', height: '30px' %>
         <p class='pl-2' style='margin: 0'>Centrales à Béton</p>
       </div>
     <% end %>
     <%= link_to sites_path(query: "carrieres calcaires") do %>
-      <div class="d-flex filter-button">
+      <div class="d-flex filter-button" data-filter="?query=carrieres+calcaires">
         <%= image_tag 'marker-green.png', width: '20px', height: '30px' %>
         <p class='pl-2' style='margin: 0'>Carrières roches calcaires</p>
       </div>
     <% end %>
     <%= link_to sites_path(query: "sablieres") do %>
-      <div class="d-flex filter-button">
+      <div class="d-flex filter-button" data-filter="?query=sablieres">
         <%= image_tag 'marker-yellow.png', width: '20px', height: '30px' %>
         <p class='pl-2' style='margin: 0'>Carrières sables et graviers</p>
       </div>
@@ -35,4 +39,120 @@
       data-markers="<%= @markers.to_json %>"
       data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
+
+  <h4 class="bold my-4">Nos sites</h4>
+  <div class="row w-75">
+    <div class="col-12 col-md-6">
+
+      <p class="my-2 bold">Siège, succursale et filiales</p>
+      <%= link_to sites_path(precise_filter: "Siège social - Barville (88)", kind: 'entites') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-blue.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Siège social - Barville (88)</p>
+        </div>
+      <% end %>
+      <%= link_to sites_path(precise_filter: "Saint-Dizier (52)", kind: 'entites') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-blue.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Saint-Dizier (52)</p>
+        </div>
+      <% end %>
+      <%= link_to sites_path(precise_filter: "Entreprise Boulogne (52)", kind: 'entites') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-blue.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Entreprise Boulogne (52)</p>
+        </div>
+      <% end %>
+      <%= link_to sites_path(precise_filter: "SAS C2B - Calin Bar Béton (55)", kind: 'entites') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-blue.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>SAS C2B - Calin Bar Béton (55)</p>
+        </div>
+      <% end %>
+
+      <p class="my-2 bold">Béton Prêt-à-l’empoi</p>
+      <%= link_to sites_path(precise_filter: "Barville / Harchéchamp (88)", kind: 'beton') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-red.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Barville / Harchéchamp (88)</p>
+        </div>
+      <% end %>
+      <%= link_to sites_path(precise_filter: "Saint-Dizier (52)", kind: 'beton') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-red.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Saint-Dizier (52)</p>
+        </div>
+      <% end %>
+      <%= link_to sites_path(precise_filter: "Rachecourt-sur-Marne (52)", kind: 'beton') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-red.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Rachecourt-sur-Marne (52)</p>
+        </div>
+      <% end %>
+      <%= link_to sites_path(precise_filter: "Varney (55)", kind: 'beton') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-red.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Varney (55)</p>
+        </div>
+      <% end %>
+
+    </div>
+
+    <div class="col-12 col-md-6">
+
+      <p class="my-2 bold">Carrières roches calcaires</p>
+      <%= link_to sites_path(precise_filter: "Attignéville (88)", kind: 'carrieres calcaires') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-green.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Attignéville (88)</p>
+        </div>
+      <% end %>
+      <%= link_to sites_path(precise_filter: "Gondrecourt-le-Château (55)", kind: 'carrieres calcaires') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-green.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Gondrecourt-le-Château (55)</p>
+        </div>
+      <% end %>
+      <%= link_to sites_path(precise_filter: "Magneux / Brousseval (52)", kind: 'carrieres calcaires') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-green.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Magneux / Brousseval (52)</p>
+        </div>
+      <% end %>
+      <%= link_to sites_path(precise_filter: "Sommerécourt (52)", kind: 'carrieres calcaires') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-green.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Sommerécourt (52)</p>
+        </div>
+      <% end %>
+      <%= link_to sites_path(precise_filter: "Tramont-Lassus (54)", kind: 'carrieres calcaires') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-green.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Tramont-Lassus (54)</p>
+        </div>
+      <% end %>
+
+      <p class="my-2 bold">Carrières sables et graviers</p>
+      <%= link_to sites_path(precise_filter: "Coussey / Sionne (88)", kind: 'sablieres', kind: 'sablieres') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-yellow.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Coussey / Sionne (88)</p>
+        </div>
+      <% end %>
+      <%= link_to sites_path(precise_filter: "Perthois (52)", kind: 'sablieres') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-yellow.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Perthois (52)</p>
+        </div>
+      <% end %>
+      <%= link_to sites_path(precise_filter: "Moeslains (52)", kind: 'sablieres') do %>
+        <div class="d-flex">
+          <%= image_tag 'marker-yellow.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Moeslains (52)</p>
+        </div>
+      <% end %>
+
+    </div>
+  </div>
 </div>
+

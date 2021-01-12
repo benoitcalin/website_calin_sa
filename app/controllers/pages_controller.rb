@@ -14,6 +14,8 @@ class PagesController < ApplicationController
   def sites
     if params[:query]
       @sites = Site.where(kind: params[:query])
+    elsif params[:precise_filter]
+      @sites = Site.where(name: params[:precise_filter], kind: params[:kind])
     else
       @sites = Site.all.reverse
     end
@@ -30,19 +32,19 @@ class PagesController < ApplicationController
   def subsidiaries; end
 
   def concrete
-    @carousel1 = Dir.glob("app/assets/images/concrete/carousel1/*")
-    @carousel2 = Dir.glob("app/assets/images/concrete/carousel2/*")
-    @carousel3 = Dir.glob("app/assets/images/concrete/carousel3/*")
+    @carousel1 = Dir.glob("app/assets/images/concrete/carousel1/*").sort
+    @carousel2 = Dir.glob("app/assets/images/concrete/carousel2/*").sort
+    @carousel3 = Dir.glob("app/assets/images/concrete/carousel3/*").sort
   end
 
   def quarries
-    @carousel1 = Dir.glob("app/assets/images/quarries/carousel1/*")
-    @carousel2 = Dir.glob("app/assets/images/quarries/carousel2/*")
+    @carousel1 = Dir.glob("app/assets/images/quarries/carousel1/*").sort
+    @carousel2 = Dir.glob("app/assets/images/quarries/carousel2/*").sort
   end
 
   def publics
-    @carousel1 = Dir.glob("app/assets/images/publics/carousel1/*")
-    @carousel2 = Dir.glob("app/assets/images/publics/carousel2/*")
+    @carousel1 = Dir.glob("app/assets/images/publics/carousel1/*").sort
+    @carousel2 = Dir.glob("app/assets/images/publics/carousel2/*").sort
   end
 
   def mentions; end
