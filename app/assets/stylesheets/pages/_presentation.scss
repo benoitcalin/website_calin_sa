@@ -43,3 +43,18 @@
   font-weight: 600;
   border-bottom: solid 3px $brand-blue;
 }
+
+@media(max-width: 927px) {
+  .pres-links .pres-link a {
+    font-size: 20px !important;
+  }
+}
+@media(max-width: 590px) {
+  .pres-links {
+    display: none;
+  }
+  #pres-beton, #pres-carriere, #pres-chantier, #logo-boulogne, #logo-c2b {
+    display: none;
+  }
+}
+

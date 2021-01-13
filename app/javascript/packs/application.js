@@ -10,9 +10,11 @@ import "controllers"
 // Internal imports, e.g:
 import { initMapbox } from '../plugins/init_mapbox';
 import { activeFilterButton } from '../plugins/active_filter';
+import { burgerMenu } from '../plugins/burger_menu';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
   activeFilterButton();
+  burgerMenu();
 })
 

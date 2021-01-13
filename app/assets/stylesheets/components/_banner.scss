@@ -10,3 +10,23 @@
     margin-left: 40px;
   }
 }
+
+@media(max-width: 908px) {
+  .banner-title-toupie {
+    h1 {
+      text-align: center;
+      font-size: 32px;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .banner-title-toupie {
+    justify-content: center;
+    h1 {
+      margin: 0;
+      max-width: 90%;
+      font-size: 28px;
+    }
+  }
+}

@@ -3,35 +3,35 @@
 
 
   <div class="d-flex justify-content-center align-items-center my-3">
-    <%= image_tag 'prez-map.jpg', style: 'max-width: 75%' %>
+    <%= image_tag 'prez-map.jpg', class: "map-home" %>
   </div>
 
   <div class="row my-3">
-    <div class="col-lg-3 col-6 cards">
+    <div class="col-xl-3 col-md-6 col-12 cards">
       <%= link_to presentation_path, class: 'link-cards', id: "prez-card" do %>
         <div class="card-category">
-          Présentation
+          <h4 class="text-center">Présentation</h4>
         </div>
       <% end %>
     </div>
-    <div class="col-lg-3 col-6 cards">
+    <div class="col-xl-3 col-md-6 col-12 cards">
       <%= link_to concrete_path, class: 'link-cards', id: "concrete-card" do %>
         <div class="card-category">
-          Béton Prêt-à-l'emploi
+          <h4 class="text-center">Béton Prêt-à-l'emploi</h4>
         </div>
       <% end %>
     </div>
-    <div class="col-lg-3 col-6 cards">
+    <div class="col-xl-3 col-md-6 col-12 cards">
       <%= link_to quarries_path, class: 'link-cards', id: "quarries-card" do %>
         <div class="card-category">
-          Carrières
+          <h4 class="text-center">Carrières</h4>
         </div>
       <% end %>
     </div>
-    <div class="col-lg-3 col-6 cards">
+    <div class="col-xl-3 col-md-6 col-12 cards">
       <%= link_to publics_path, class: 'link-cards', id: "publics-card" do %>
         <div class="card-category">
-          Travaux Publics
+          <h4 class="text-center">Travaux Publics</h4>
         </div>
       <% end %>
     </div>

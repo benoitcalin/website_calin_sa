@@ -3,6 +3,15 @@
 </div>
 
 <div class="calin-container">
+  <div class="nav-steps my-2">
+    <%= link_to sites_path do %>
+      <p class="">< Nos sites</p>
+    <% end %>
+    <%= link_to concrete_path do %>
+      <p class="">Béton ></p>
+    <% end %>
+  </div>
+
   <div class="row my-4">
     <div class="col-lg-9 col-12">
       <p>L'<span class="bold">entreprise BOULOGNE</span> a été rachetée (à la famille BOULOGNE) début <span class="bold">1997</span>.</p>
@@ -12,12 +21,13 @@
       <p><span class="bold">Yves CALIN</span> dirige l'entreprise BOULOGNE.</p>
     </div>
     <div class="col-lg-3 col-12 d-flex align-items-center justify-content-center">
-      <%= image_tag 'logos/logo-boulogne.jpg', width: '50%' %>
+      <%= image_tag 'logos/logo-boulogne.jpg', style: 'max-width: 200px', class: "mb-3" %>
     </div>
   </div>
-  <div class="row">
+
+  <div class="row flex-lg-row flex-column-reverse">
     <div class="col-lg-3 col-12 d-flex align-items-center justify-content-center">
-      <%= image_tag 'logos/logo-c2b.png', width: '30%' %>
+      <%= image_tag 'logos/logo-c2b.png', style: 'max-width: 100px', class: "mb-3" %>
     </div>
     <div class="col-lg-9 col-12">
       <p>La <span class="bold">SAS CALIN BAR Béton (C2B)</span> a été créée début <span class="bold">2011</span> pour racheter à GEDIMAT-COLLOT son activité Béton prêt à l'emploi à BAR-LE-DUC (55), et sa centrale à béton de VARNEY / VAL D'ORNAIN (55).</p>

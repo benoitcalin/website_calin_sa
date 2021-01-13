@@ -1,50 +1,57 @@
 <div class="sidebar-calin" data-controller="navbar">
-  <div class="sidebar-top mt-2">
-    <%= link_to root_path do %>
-      <%= image_tag "logos/logo-calin.jpg", alt: 'logo entreprise paul calin' %>
-    <% end %>
+  <div class="side">
+    <button class="hamburger hamburger--arrow" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <div class="sidebar-top mt-2">
+      <%= link_to root_path do %>
+        <%= image_tag "logos/logo-calin.jpg", alt: 'logo entreprise paul calin' %>
+      <% end %>
 
-    <div class="sidebar-item mt-2" data-navbar-target="item">
-      <%= link_to 'Présentation', presentation_path %>
-    </div>
-    <div class="sidebar-sub-items py-2">
-      <div class="sidebar-sub-item" data-navbar-target="item">
-        <%= link_to 'Organisation', organisation_path %>
+      <div class="sidebar-item mt-2" data-navbar-target="item">
+        <%= link_to 'Présentation', presentation_path %>
       </div>
-      <div class="sidebar-sub-item" data-navbar-target="item">
-        <%= link_to 'Moyens et Chiffres', figures_path %>
+      <div class="sidebar-sub-items py-2">
+        <div class="sidebar-sub-item" data-navbar-target="item">
+          <%= link_to 'Organisation', organisation_path %>
+        </div>
+        <div class="sidebar-sub-item" data-navbar-target="item">
+          <%= link_to 'Moyens et Chiffres', figures_path %>
+        </div>
+        <div class="sidebar-sub-item" data-navbar-target="item">
+          <%= link_to 'Historique', history_path %>
+        </div>
       </div>
-      <div class="sidebar-sub-item" data-navbar-target="item">
-        <%= link_to 'Historique', history_path %>
+      <div class="sidebar-item" data-navbar-target="item">
+        <%= link_to 'Nos sites', sites_path %>
+      </div>
+      <div class="sidebar-item" data-navbar-target="item">
+        <%= link_to 'Nos filiales', subsidiaries_path %>
+      </div>
+      <div class="sidebar-item" data-navbar-target="item">
+        <%= link_to "Béton Prêt-à-l'emploi", concrete_path %>
+      </div>
+      <div class="sidebar-item" data-navbar-target="item">
+        <%= link_to 'Carrières et Sablières', quarries_path %>
+      </div>
+      <div class="sidebar-item" data-navbar-target="item">
+        <%= link_to 'Travaux Publics', publics_path %>
       </div>
     </div>
-    <div class="sidebar-item" data-navbar-target="item">
-      <%= link_to 'Nos sites', sites_path %>
-    </div>
-    <div class="sidebar-item" data-navbar-target="item">
-      <%= link_to 'Nos filiales', subsidiaries_path %>
-    </div>
-    <div class="sidebar-item" data-navbar-target="item">
-      <%= link_to "Béton Prêt-à-l'emploi", concrete_path %>
-    </div>
-    <div class="sidebar-item" data-navbar-target="item">
-      <%= link_to 'Carrières et Sablières', quarries_path %>
-    </div>
-    <div class="sidebar-item" data-navbar-target="item">
-      <%= link_to 'Travaux Publics', publics_path %>
-    </div>
-  </div>
 
-  <div class="sidebar-bottom px-4 py-1">
-      <div class="barville mb-2">
-        <p>Barville (88)</p>
-        <a href="tel:+33329069009"><i class="fas fa-phone-alt mr-1"></i> 03.29.06.90.09</a>
-        <a href="mailto:barville@paul-calin.fr"><i class="fas fa-envelope mr-1"></i> barville@paul-calin.fr</a>
-      </div>
-      <div class="barville">
-        <p>Saint-Dizier (52)</p>
-        <a href="tel:+33329069009"><i class="fas fa-phone-alt mr-1"></i> 03.25.05.26.08</a>
-        <a href="mailto:barville@paul-calin.fr"><i class="fas fa-envelope mr-1"></i> saint-dizier@paul-calin.fr</a>
-      </div>
+    <div class="sidebar-bottom px-4 py-1">
+        <div class="barville mb-2">
+          <p>Barville (88)</p>
+          <a href="tel:+33329069009"><i class="fas fa-phone-alt mr-1"></i> 03.29.06.90.09</a>
+          <a href="mailto:barville@paul-calin.fr"><i class="fas fa-envelope mr-1"></i> barville@paul-calin.fr</a>
+        </div>
+        <div class="barville">
+          <p>Saint-Dizier (52)</p>
+          <a href="tel:+33329069009"><i class="fas fa-phone-alt mr-1"></i> 03.25.05.26.08</a>
+          <a href="mailto:barville@paul-calin.fr"><i class="fas fa-envelope mr-1"></i> saint-dizier@paul-calin.fr</a>
+        </div>
+    </div>
   </div>
 </div>

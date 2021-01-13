@@ -78,3 +78,41 @@
     font-weight: 400;
   }
 }
+
+.hamburger {
+  display: none;
+  .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+    background-color: white !important;
+  }
+  &:focus {
+    outline: transparent;
+  }
+}
+
+@media(max-width: 768px) {
+  .sidebar-top, .sidebar-bottom {
+    display: none;
+  }
+  .sidebar-calin {
+    width: 60px;
+  }
+  .sidebar-container {
+    margin-left: 60px;
+  }
+  .hamburger {
+    display: block;
+    position : absolute;
+    right: -4px;
+  }
+  .sidebar-open {
+    z-index: 3;
+    display: flex;
+    width: 310px;
+    .sidebar-top, .sidebar-bottom {
+      display: flex;
+    }
+    .sidebar-bottom {
+      margin-top: 20px;
+    }
+  }
+}

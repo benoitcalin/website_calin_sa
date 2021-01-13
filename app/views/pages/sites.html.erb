@@ -2,8 +2,116 @@
   <h1>Nos Sites</h1>
 </div>
 
-<div class="calin-container my-3 d-flex flex-column align-items-center justify-content-center">
-  <div class="d-flex my-3">
+<div class="calin-container sites-page-sm-container mb-3">
+  <div class="nav-steps my-2">
+    <%= link_to history_path do %>
+      <p class="">< Histoire</p>
+    <% end %>
+    <%= link_to subsidiaries_path do %>
+      <p class="">Nos filiales ></p>
+    <% end %>
+  </div>
+
+  <div class="text-center">
+    <p class="">Nous sommes désolé, la carte interactive n'est visible que sur ordinateur.</p>
+    <p class="">Veuillez accéder au site internet sur un appareil avec un écran plus large pour la voir.</p>
+    <p class="">Elle présente l'ensemble des sites ci-dessous :</p>
+
+    <div class="row">
+      <div class="col-12 col-lg-6">
+
+        <p class="my-2 bold">Siège, succursale et filiales</p>
+        <div class="d-flex">
+          <%= image_tag 'marker-blue.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Siège social - Barville (88)</p>
+        </div>
+        <div class="d-flex">
+          <%= image_tag 'marker-blue.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Saint-Dizier (52)</p>
+        </div>
+        <div class="d-flex">
+          <%= image_tag 'marker-blue.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Entreprise Boulogne (52)</p>
+        </div>
+        <div class="d-flex">
+          <%= image_tag 'marker-blue.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>SAS C2B - Calin Bar Béton (55)</p>
+        </div>
+
+        <p class="my-2 bold">Béton Prêt-à-l’empoi</p>
+        <div class="d-flex">
+          <%= image_tag 'marker-red.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Barville / Harchéchamp (88)</p>
+        </div>
+        <div class="d-flex">
+          <%= image_tag 'marker-red.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Saint-Dizier (52)</p>
+        </div>
+        <div class="d-flex">
+          <%= image_tag 'marker-red.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Rachecourt-sur-Marne (52)</p>
+        </div>
+        <div class="d-flex">
+          <%= image_tag 'marker-red.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Varney (55)</p>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-lg-6">
+
+        <p class="my-2 bold">Carrières roches calcaires</p>
+        <div class="d-flex">
+          <%= image_tag 'marker-green.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Attignéville (88)</p>
+        </div>
+        <div class="d-flex">
+          <%= image_tag 'marker-green.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Gondrecourt-le-Château (55)</p>
+        </div>
+        <div class="d-flex">
+          <%= image_tag 'marker-green.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Magneux / Brousseval (52)</p>
+        </div>
+        <div class="d-flex">
+          <%= image_tag 'marker-green.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Sommerécourt (52)</p>
+        </div>
+        <div class="d-flex">
+          <%= image_tag 'marker-green.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Tramont-Lassus (54)</p>
+        </div>
+
+        <p class="my-2 bold">Carrières sables et graviers</p>
+        <div class="d-flex">
+          <%= image_tag 'marker-yellow.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Coussey / Sionne (88)</p>
+        </div>
+        <div class="d-flex">
+          <%= image_tag 'marker-yellow.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Perthois (52)</p>
+        </div>
+        <div class="d-flex">
+          <%= image_tag 'marker-yellow.png', width: '17px', height: '25px' %>
+          <p class='pl-2' style='margin: 0'>Moeslains (52)</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="calin-container sites-page-lg-container my-3 flex-column align-items-center justify-content-center">
+  <div class="nav-steps my-2">
+    <%= link_to history_path do %>
+      <p class="">< Histoire</p>
+    <% end %>
+    <%= link_to subsidiaries_path do %>
+      <p class="">Nos filiales ></p>
+    <% end %>
+  </div>
+
+  <div class="d-flex filter-buttons my-3">
     <%= link_to sites_path do %>
       <div class="d-flex filter-button">
         <p class='pl-2' style='margin: 0'>Tout</p>
@@ -41,8 +149,8 @@
   </div>
 
   <h4 class="bold my-4">Nos sites</h4>
-  <div class="row w-75">
-    <div class="col-12 col-md-6">
+  <div class="row w-lg-75 w-100">
+    <div class="col-12 col-lg-6">
 
       <p class="my-2 bold">Siège, succursale et filiales</p>
       <%= link_to sites_path(precise_filter: "Siège social - Barville (88)", kind: 'entites') do %>
@@ -98,7 +206,7 @@
 
     </div>
 
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-lg-6">
 
       <p class="my-2 bold">Carrières roches calcaires</p>
       <%= link_to sites_path(precise_filter: "Attignéville (88)", kind: 'carrieres calcaires') do %>

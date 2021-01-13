@@ -1,4 +1,7 @@
 .card-category {
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 300px;
   background-size: cover;
   background-position: center;
   height: 150px;
@@ -14,6 +17,22 @@
   padding-bottom: 10px;
   &:hover {
     transform: scale(1.05);
+  }
+}
+
+.map-home {
+  max-width: 75%;
+}
+
+@media(max-width: 1200px) {
+  .map-home {
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 590px) {
+  .map-home {
+    display: none;
   }
 }
 

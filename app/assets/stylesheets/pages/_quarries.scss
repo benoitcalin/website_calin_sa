@@ -1,0 +1,7 @@
+.quarry-image {
+  max-width: 50%;
+}
+
+@media(max-width: 1200px) { .quarry-image { max-width: 450px; } }
+@media(max-width: 800px) { .quarry-image { max-width: 350px; } }
+@media(max-width: 470px) { .quarry-image { max-width: 200px; } }

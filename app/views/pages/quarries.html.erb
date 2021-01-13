@@ -3,6 +3,15 @@
 </div>
 
 <div class="calin-container">
+  <div class="nav-steps my-2">
+    <%= link_to concrete_path do %>
+      <p class="">< Béton</p>
+    <% end %>
+    <%= link_to publics_path do %>
+      <p class="">Travaux Publics ></p>
+    <% end %>
+  </div>
+
   <p class="mt-4">
     L'entreprise CALIN et sa filiale BOULOGNE sont <span class="bold">titulaires d'une dizaine d'autorisations préfectorales de carrières</span>, dans les départements des <span class="bold">Vosges</span> (88), de la <span class="bold">Haute-Marne</span> (52), de la <span class="bold">Meuse</span> (55), et de la <span class="bold">Meurthe-et-Moselle</span> (54).
   </p>
@@ -45,7 +54,7 @@
   </div>
 
   <div class="d-flex justify-content-center align-items-center my-4">
-    <%= render 'carousel', images: @carousel1, path: "quarries/carousel1", number: 1, mid_width: true %>
+    <%= render 'carousel', images: @carousel1, path: "quarries/carousel1", number: 1 %>
   </div>
 
   <div class="row">
@@ -91,7 +100,7 @@
     Ces sites produisent des <span class="bold">sables</span> et des <span class="bold">graviers alluvionnaires, roulés</span> ou <span class="bold">semi-concassés</span>, destinés à la <span class="bold">fabrication des bétons</span>.
   </p>
   <div class="d-flex justify-content-center align-items-center my-4">
-    <%= render 'carousel', images: @carousel2, path: "quarries/carousel2", number: 2, mid_width: true %>
+    <%= render 'carousel', images: @carousel2, path: "quarries/carousel2", number: 2 %>
   </div>
   <p class="my-3">
     La sté BOULOGNE exploite à SAINT-DIZIER / MOESLAINS (52) un gisement de <span class="bold text-blue">sables siliceux fins de l'Aptien supérieur</span>.
@@ -113,7 +122,7 @@
     Notre parc de camions nous permet des livraisons par semi-bennes, 8x4 bennes, et 6x4 bennes ou bi-bennes.
   </p>
   <div class="d-flex justify-content-center align-items-center my-4">
-    <%= image_tag 'quarries/gondrecourt.jpg', style: 'max-width: 50%;' %>
+    <%= image_tag 'quarries/gondrecourt.jpg', class: "quarry-image" %>
   </div>
   <p class="my-3">
     Nous nous appuyons sur des associations environnementales régionales pour les suivis écologiques (faune et flore) de nos carrières.

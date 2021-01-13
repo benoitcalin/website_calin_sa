@@ -3,7 +3,16 @@
 </div>
 
 <div class="calin-container">
-  <div class="pres-links my-3">
+  <div class="nav-steps my-2">
+    <%= link_to presentation_path do %>
+      <p class="">< Présentation</p>
+    <% end %>
+    <%= link_to figures_path do %>
+      <p class="">Moyens ></p>
+    <% end %>
+  </div>
+
+  <div class="pres-links mb-3">
     <div class="pres-link">
       <%= link_to 'Organisation', organisation_path, class: 'active-tab' %>
     </div>
@@ -32,8 +41,8 @@
         <li>Yves CALIN, Directeur Général Délégué. <small>(basé à Saint-Dizier)</small></li>
       </ul>
     </div>
-    <div class="col-lg-4 col-12">
-      <%= image_tag 'organigramme.png', width: '100%', style: 'max-width: 300px;' %>
+    <div class="col-lg-4 col-12 d-flex justify-content-center my-3">
+      <%= image_tag 'organigramme.png', width: '100%', style: 'max-width: 300px; object-fit: contain;' %>
     </div>
   </div>
 

@@ -14,3 +14,9 @@
   bottom: 10px;
   max-height: 400px;
 }
+
+@media(max-width: 590px) {
+  #photo1, #photo2 {
+    display: none;
+  }
+}

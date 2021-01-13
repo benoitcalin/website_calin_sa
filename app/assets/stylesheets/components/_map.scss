@@ -34,3 +34,42 @@
 .mapboxgl-popup-close-button:focus {
   outline: transparent;
 }
+
+.sites-page-sm-container {
+  display: none;
+}
+.sites-page-lg-container {
+  display: flex;
+}
+
+@media(max-width: 1199px) {
+  .filter-button {
+    width: 162px;
+  }
+}
+
+@media(max-width: 1125px) {
+  .filter-buttons {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .filter-button {
+      width: 190px;
+    }
+  }
+}
+
+@media(max-width: 952px) {
+  .filter-buttons .filter-button {
+    width: 162px;
+  }
+}
+
+@media(max-width: 900px) {
+  .sites-page-lg-container {
+    display: none;
+  }
+  .sites-page-sm-container {
+    display: block;
+  }
+}
