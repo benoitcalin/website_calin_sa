@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/presentation', to: "pages#presentation", as: :presentation
   get '/organisation', to: "pages#organisation", as: :organisation
   get '/moyens_et_chiffres', to: "pages#figures", as: :figures
-  get '/histoire', to: "pages#history", as: :history
+  get '/historique', to: "pages#history", as: :history
   get '/sites', to: "pages#sites", as: :sites
   get '/filiales', to: "pages#subsidiaries", as: :subsidiaries
   get '/beton', to: "pages#concrete", as: :concrete
