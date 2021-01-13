@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   get '/filiales', to: "pages#subsidiaries", as: :subsidiaries
   get '/beton', to: "pages#concrete", as: :concrete
   get '/carrieres', to: "pages#quarries", as: :quarries
-  get '/tavaux_publics', to: "pages#publics", as: :publics
+  get '/travaux_publics', to: "pages#publics", as: :publics
   get '/mentions_legales', to: "pages#mentions", as: :mentions
 end
