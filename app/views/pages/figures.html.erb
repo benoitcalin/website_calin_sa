@@ -85,38 +85,38 @@
 
   <p class="mb-3">L'entretien du matériel est réalisé dans nos ateliers à Barville et Saint-Dizier.</p>
 
-  <p class="bold text-blue mb-3 mt-5">Index d’égalité professionnelle femmes-hommes <%= @professional_equality.year %> : <%= @professional_equality.index %></p>
+  <p class="bold text-gray mb-3 mt-5" style="font-size: 16px">Index d’égalité professionnelle femmes-hommes <%= @professional_equality.year %> : <%= @professional_equality.index %></p>
 
-  <table class="table" style="max-width: 900px">
+  <table class="table" style="font-size: 14px; max-width: 700px; border: 1px solid grey">
     <thead>
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">Indicateur</th>
-        <th class="text-center" scope="col">Résultat</th>
-        <th class="text-center" scope="col">Points obtenus</th>
+        <th class="text-gray" scope="col">#</th>
+        <th class="text-gray" scope="col">Indicateur</th>
+        <th class="text-center text-gray" scope="col">Résultat</th>
+        <th class="text-center text-gray" scope="col">Points obtenus</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row">1</th>
+        <th class="text-gray" scope="row">1</th>
         <td>Écart de rémunération</td>
         <td class="text-center"><%= @professional_equality.pay_gap_result %></td>
         <td class="text-center"><%= @professional_equality.pay_gap_points %></td>
       </tr>
       <tr>
-        <th scope="row">2</th>
+        <th class="text-gray" scope="row">2</th>
         <td>Écart d’augmentations individuelles</td>
         <td class="text-center"><%= @professional_equality.increase_gap_result %></td>
         <td class="text-center"><%= @professional_equality.increase_gap_points %></td>
       </tr>
       <tr>
-        <th scope="row">3</th>
+        <th class="text-gray" scope="row">3</th>
         <td>Salariées augmentées au retour d’un congé maternité</td>
         <td class="text-center"><%= @professional_equality.maternity_increase_result %></td>
         <td class="text-center"><%= @professional_equality.maternity_increase_points %></td>
       </tr>
       <tr>
-        <th scope="row">4</th>
+        <th class="text-gray" scope="row">4</th>
         <td>Salariés du sexe sous-représenté dans les 10 plus hautes rémunérations</td>
         <td class="text-center"><%= @professional_equality.high_remuneration_result %></td>
         <td class="text-center"><%= @professional_equality.high_remuneration_points %></td>
@@ -124,10 +124,10 @@
     </tbody>
   </table>
   <% if @professional_equality.actions_comment.present? %>
-    <p style="font-size: 16px">Mesures de corrections prévues :</p>
-    <p style="font-size: 16px"><%= @professional_equality.actions_comment %></p>
+    <p style="font-size: 14px">Mesures de corrections prévues :</p>
+    <p style="font-size: 14px"><%= @professional_equality.actions_comment %></p>
   <% else %>
-    <p style="font-size: 16px">Mesures de corrections prévues : non requis</p>
+    <p style="font-size: 14px">Mesures de corrections prévues : non requis</p>
   <% end %>
 </div>
 
