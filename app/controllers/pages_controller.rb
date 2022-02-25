@@ -7,7 +7,9 @@ class PagesController < ApplicationController
 
   def organisation; end
 
-  def figures; end
+  def figures
+    @professional_equality = ProfessionalEquality.find_by(technical_name: 'only_instance')
+  end
 
   def history; end
 

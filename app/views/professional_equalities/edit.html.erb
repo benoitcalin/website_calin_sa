@@ -1,0 +1,49 @@
+<%= simple_form_for @professional_equality do |f| %>
+
+  <div class="container">
+    <h1 class="text-center py-3">Modifier les informations</h1>
+
+    <%= f.input :year, label: "Année" %>
+    <%= f.input :index, label: "Index" %></p>
+
+    <table class="table" style="max-width: 900px">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Indicateur</th>
+          <th scope="col">Résultat</th>
+          <th scope="col">Points obtenus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Écart de rémunération</td>
+          <td class="text-center"><%= f.input :pay_gap_result, label: false %></td>
+          <td class="text-center"><%= f.input :pay_gap_points, label: false %></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Écart d’augmentations individuelles</td>
+          <td class="text-center"><%= f.input :increase_gap_result, label: false %></td>
+          <td class="text-center"><%= f.input :increase_gap_points, label: false %></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Salariées augmentées au retour d’un congé maternité</td>
+          <td class="text-center"><%= f.input :maternity_increase_result, label: false %></td>
+          <td class="text-center"><%= f.input :maternity_increase_points, label: false %></td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Salariés du sexe sous-représenté dans les 10 plus hautes rémunérations</td>
+          <td class="text-center"><%= f.input :high_remuneration_result, label: false %></td>
+          <td class="text-center"><%= f.input :high_remuneration_points, label: false %></td>
+        </tr>
+      </tbody>
+    </table>
+    <%= f.input :actions_comment, label: 'Mesures de corrections prévues :' %>
+
+    <%= f.button :submit, "Enregistrer", class: 'btn btn-primary' %>
+  </div>
+<% end -%>

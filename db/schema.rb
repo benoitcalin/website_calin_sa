@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_24_104550) do
+ActiveRecord::Schema.define(version: 2022_02_25_091346) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "professional_equalities", force: :cascade do |t|
+    t.string "technical_name", default: ""
+    t.string "year", default: ""
+    t.string "index", default: ""
+    t.string "pay_gap_result", default: ""
+    t.string "pay_gap_points", default: ""
+    t.string "increase_gap_result", default: ""
+    t.string "increase_gap_points", default: ""
+    t.string "maternity_increase_result", default: ""
+    t.string "maternity_increase_points", default: ""
+    t.string "high_remuneration_result", default: ""
+    t.string "high_remuneration_points", default: ""
+    t.text "actions_comment", default: ""
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "sites", force: :cascade do |t|
     t.float "latitude"

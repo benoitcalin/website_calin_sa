@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   get '/carrieres', to: "pages#quarries", as: :quarries
   get '/travaux_publics', to: "pages#publics", as: :publics
   get '/mentions_legales', to: "pages#mentions", as: :mentions
+
+  resources :professional_equalities, only: [:show, :edit, :update]
 end

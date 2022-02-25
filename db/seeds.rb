@@ -1,4 +1,8 @@
 Site.destroy_all
+User.destroy_all
+ProfessionalEquality.destroy_all
+
+User.create!(email: 'barville@paul-calin.com', password: 'azerty123')
 
 hash = {
   "entites" => [
@@ -32,3 +36,18 @@ hash.each do |kind, array|
     Site.create!(kind: kind, name: data[:name], latitude: data[:latitude], longitude: data[:longitude], color: data[:color])
   end
 end
+
+ProfessionalEquality.create!(
+  year: '2021',
+  technical_name: 'only_instance',
+  index: 'incalculable',
+  pay_gap_result: 'incalculable',
+  pay_gap_points: '',
+  increase_gap_result: '0%',
+  increase_gap_points: '35 points',
+  maternity_increase_result: '100%',
+  maternity_increase_points: '15 points',
+  high_remuneration_result: '2',
+  high_remuneration_points: '5 points',
+  actions_comment: 'non requis'
+)
